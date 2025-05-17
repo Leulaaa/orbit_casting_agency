@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="contactus.css">
+    
+    <title>orbit_casting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     
+</head>
+<body>
+  <section id="header">
+    <div id="icon">
+        <a href="../index.html"><i class="fas fa-home"></i></a>
+    </div>
+    <img src="./image/logo.PNG" id="logo" alt=""><br>
+    <ul id="navbar">
+            <li ><a  href="client.html"> HOME</a></li>
+            <li ><a  href="actor.html">ACTORS</a></li>
+            <li><a href="crew.html"> CREW</a></li>
+            <li  ><a   href="blog.html"> BLOG</a></li>
+            <li class="active"><a class="active" href="#"> CONTACT US</a></li>
+            <li><a href="login.html"> LOGIN</a></li>
+            <li><a onclick="myFunction()" class="dropbtn"> REGISTER</a> </li>
+                
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home">CASTING COMPANY</a>
+                  <a href="#about">ACTORS</a>
+                 
+                </div>
+             
+           
+        </ul>
+        <div id="info">
+            <h1>INFORMATION</h1>
+            <p>Bole, Wollo Sefer Addis Abeba Ethiopia</p>
+            <p><i class="fas fa-phone"> </i>+251912002202</p>
+            
+        </div>   
+</section>
+<!-- section2 -->
+<div id="ic"> 
+    <a href="./index.html"><i class="fas fa-user"></i></a>
+</div>
+<section id="section2">
+    <!-- section2 -->
+    <div id="ic"> 
+        <a href="./index.html"><i class="fas fa-user"></i></a>
+    </div>
+     <section id="section2">
+        <h1 id="contactss">CONTACT US</h1 ><br>
+            <section id="fto" >
+                
+          <div class="location">
+            
+            <div  id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d492.54269885913146!2d38.775915!3d9.032571!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1728860789513!5m2!1sen!2set" width="1070" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+           
+          </div><br><br>
+          
+              <div class="contact">
+              <form action="" method="POST" id="contact-form">
+          <div class="input-box">
+              <div class="input-field field">
+                  <input type="text" placeholder="Full Name" name="name" id="name" 
+                  class="item" autocomplete="off" required 
+                  pattern="[A-Za-z\s]+" title="Please enter letters only.">
+              </div>
+              <div class="input-field field">
+                  <input type="email" placeholder="Email Address" id="email" name="email"
+                  class="item" autocomplete="off" required>
+              </div>
+          </div>
+          <div class="input-box">
+              <div class="input-field field">
+                  <input type="tel" placeholder="Phone Number" id="phone" name="pnumber"
+                  class="item" autocomplete="off" required 
+                  pattern="(\+2519[0-9]{8}|09[0-9]{8})"  title="Please enter a valid phone number (e.g., +251123456789)">
+              </div>
+              <div class="input-field field">
+                  <input type="text" placeholder="Subject" id="subject" name="subject"
+                  class="item" autocomplete="off" required 
+                  pattern="[A-Za-z\s]+" title="Please enter letters only.">
+              </div>
+          </div>
+      
+          <div class="textarea-field field">
+              <textarea name="message" id="message" cols="30" rows="10" 
+              placeholder="Your Message" class="item" 
+              autocomplete="off" required 
+              pattern="[A-Za-z\s]+" title="Please enter letters only."></textarea>
+          </div>
+      
+          <button type="submit">Send Message</button>
+      </form><br>
+      
+              <div class="col-sm-12 col-md-12 col-lg-4"><br><br><br>
+                  <div class="contact-info white">
+                    <div class="contact-item media"> <i class="fa fa-map-marker-alt media-left media-right-margin"></i>
+                      <div class="media-body">
+                        <p class="text-uppercase">Address</p>
+                        <p class="text-uppercase">Bole, Wollo Sefer Addis Abeba Ethiopia</p>
+                      </div>
+                    </div>
+                    <div class="contact-item media"> <i class="fa fa-mobile media-left media-right-margin"></i>
+                      <div class="media-body">
+                        <p class="text-uppercase">Phone</p>
+                        <p class="text-uppercase" id="si"><a class="" href="tel:+15173977100" id="si">+251912002202</a> </p>
+                      </div>
+                    </div>
+                    <div class="contact-item media"> <i class="fa fa-envelope media-left media-right-margin"></i>
+                      <div class="media-body">
+                        <p class="text-uppercase">E-mail</p>
+                        <p class="text-uppercase"><a class="" href="mailto:abcdefg@gmail.com" id="si">orbitagency@gmail.com</a> </p>
+                      </div>
+                    </div>
+                    <div class="contact-item media"> <i class="fa fa-clock media-left media-right-margin"></i>
+                      <div class="media-body">
+                        <p class="text-uppercase">Working Hours</p>
+                        <p class="text-uppercase">Mon-Sun 6.00 AM to 10.00PM.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+            </section>
+    <!-- footer -->
+     <!-- footer -->
+     <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4 " id="section0001">
+                    <h5 class="text-uppercase">About <ins id="le">Us</ins></h5>
+                    <p class="">Our mission is to discover, nurture, and promote diverse talent while providing exceptional casting services to our clients. We believe that every story deserves the right talent, and we are dedicated to matching the perfect performers with the roles that bring stories to life.</p>
+                </div>
+                <!-- Contact Information -->
+                <div class="col-md-4 "id="section0001">
+                    <h5 class="text-uppercase">Contact <ins id="le">Information</ins></h5>
+                    <ul class="list-unstyled">
+                        
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+251912002202" class="text-light">+251912002202</a></li><br>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@example.com" class="text-light">orbitagency@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Newsletter Signup -->
+                <div class="col-md-4" id="section0001">
+                    <h5 class="text-uppercase">Social Media <ins id="le">Account's</ins></h5>
+                    <div class="social-icons mb-3">
+                        <a href="" class="text-light mx-2" aria-label="telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="" class="text-light mx-2" aria-label="github"><i class="fab fa-github"></i></a>
+                        <a href="" class="text-light mx-2" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="" class="text-light mx-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+               
+                <p id="cop" class="mb-0">&copy; 2024 Orbit Casting Agency. All rights reserved. <br>Developed by Leul</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunctions() {
+      document.getElementById("mydropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtnn')) {
+        var dropdowns = document.getElementsByClassName("dropdowncontent");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</html>
