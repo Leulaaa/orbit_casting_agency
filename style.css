@@ -1,0 +1,181 @@
+
+#im1{
+    width: 150px;
+    
+    z-index: 1000px;
+   position: absolute;
+   top: 8px;
+}
+/* section2 */
+.section2{
+    display: flex;
+    text-align: center;
+    margin-left: 35%;
+    padding-bottom: 10px;
+}
+.section2 a{
+    text-decoration: none;
+  
+   font-weight: 600;
+  
+   
+}
+.section2 div{
+   
+   
+    border-radius: 8px;
+    margin: 0px 30px;
+   
+  
+
+}
+.section2 h1{
+    font-size: 30px;
+    font-family: monospace;
+    color: rgb(253, 253, 253);
+    font-weight: 700;
+}
+.section2 div:hover{
+    box-shadow: 0 0 10px orange;
+    
+}
+.button-container {
+    position: relative;
+    display: inline-block; /* Ensures tooltip is positioned correctly */
+}
+
+.hover-button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tooltip {
+    
+    
+    visibility: hidden; /* Hidden by default */
+    width: 220px; /* Tooltip width */
+    background-color: #d4c1a4; /* Tooltip background color */
+    color: #494040; /* Tooltip text color */
+    text-align: center; /* Centered text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside the tooltip */
+    position: absolute; /* Position the tooltip */
+    z-index: 1; /* Ensures tooltip appears above other content */
+    bottom: 125%; /* Position above the button */
+    left: 50%; /* Center the tooltip horizontally */
+    margin-left: -110px; /* Offset for centering */
+    opacity: 0; /* Invisible by default */
+    transition: opacity 0.3s; /* Fade-in effect */
+}
+
+.button-container:hover .tooltip {
+    visibility: visible; /* Show tooltip on hover */
+    opacity: 1; /* Make tooltip visible */
+}
+#but{
+    padding: 10px 60px;
+}
+/*  */
+.section3 {
+    padding: 45px;
+    
+    }
+.section3 div{
+background-color: #fff1dd83;
+box-shadow: 0 0 10px rgb(231, 225, 225);
+
+}
+.section3 h1{
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 1px black;
+    color: rgb(65, 44, 13);  
+    margin: 0px 190px;
+    padding-bottom: 20px;
+}
+.section3 p{
+    margin: 0px 150px;
+    color: rgb(44, 41, 41);
+    padding: 40px;
+    padding-top: 20px;
+
+
+}
+/*  */
+#carousel-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; /* Prevents the content from wrapping to a new line */
+  }
+  
+  #carousel-content {
+    display: inline-block;
+    white-space: nowrap; /* Makes the logos sit side-by-side in a line */
+    animation: slide 30s linear infinite; /* Infinite scrolling animation */
+  }
+  
+  .section03 {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 0 20px;
+  }
+  .section03 img{
+    width: 100%;
+    height: 200px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0); /* Start from the beginning */
+    }
+    100% {
+      transform: translateX(-100%); /* Move left by 100% of the container's width */
+    }
+  }
+  .section4 h1{
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    
+    color: rgb(65, 44, 13);  
+   
+    padding-bottom: 20px;
+  }
+  .section4 h3{
+    font-size: 15px;
+  }
+  /* footer */
+ footer {
+    
+   
+ }
+ #section0001 h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ #le{
+    color:rgb(138, 90, 35);
+ }
+ #section0001 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(158, 156, 156);
+
+ }
+ #section0001 a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(158, 156, 156);
+    text-decoration: none;
+
+ }
+ #cop{
+    font-family: cursive ;
+    font-size: 13px;
+    color: rgba(126, 122, 91, 0.685);
+    margin-left: 15px;
+}
